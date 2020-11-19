@@ -19,4 +19,4 @@ except KeyboardInterrupt:
 	sys.exit()
 
 for res in results:
-  print(res)
+	print(res)
