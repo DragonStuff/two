@@ -4,7 +4,7 @@ from multiprocessing import Pool
 import sys, requests, time
 
 def request(line):
-	time.sleep(0.5)
+	time.sleep(1)
 	user = line.strip()
 	status = requests.get(f"https://github.com/{user}").status_code
 	result = {"user": user, "data": status}
